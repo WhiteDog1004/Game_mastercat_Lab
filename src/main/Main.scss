@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --main-bg-color : #4f3ea8 !important;
+    --sub-bg-color : #291c6e !important;
+}
+
+
+body {
+    background-color: var(--main-bg-color) !important;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.movieBox {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.movieInBox.on {
+    background: #170d49 !important;
+}
+.movieBox video {
+    opacity: 0.3;
+    z-index: 1;
+}
+.movieInBox {
+    margin-top: 25px;
+    width: 80%;
+    height: 80%;
+    min-height: 680px;
+    background-color: var(--sub-bg-color) !important;
+    z-index: 99;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, -8px -26px 7px 17px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, -8px -26px 7px 17px rgba(0,0,0,0);
+}
+.movieInBox .inBoxMasterCat {
+    width: 100%;
+    transform: scale(0.7) translate(-50%, -50%);
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+.inBoxTextBox h1 {
+    font-size: 1.5em;
+    padding: 20px;
+    text-align: center;
+    white-space: nowrap;
+}
+.inBoxTextBox {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    color: white;
+    text-shadow:3px 3px 10px black;
+    text-align: center;
+}
+.inBoxTextBox div img {
+    width: 295px;
+    height: auto;
+    margin: 20px auto;
+    border: 1px solid var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    opacity: 0.3;
+    z-index: 99;
+}
+.inBoxTextBox div img:hover {
+    opacity: 1 !important;
+    animation: scale .25s linear forwards;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, -8px -26px 7px 17px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, -8px -26px 7px 17px rgba(0,0,0,0);
+    transition: 0.5s;
+}
+
+@keyframes scale {
+    0% { transform: scale(1);}
+    80% { transform: scale(1.15);}
+    100% { transform: scale(1.1); }
+}
+.inBoxTextBox span {
+    margin-bottom: 20px;
+}
+.inBoxTextBox .wolf {
+    width: 295px;
+    height: auto;
+    margin: 0 auto;
+}
+@media (max-height: 700px) {
+    .inBoxTextBox {
+        min-height: 670px;
+    }
+    .inBoxTextBox h1 {
+        display: none;
+    }
+    .wolf {
+        margin-top: 80px !important;
+    }
+}
+
+@media (max-width: 425px) {
+    .inBoxTextBox div img {
+        width: 205px;
+        height: auto;
+    }
+    .inBoxTextBox .wolf {
+        width: 205px;
+        height: auto;
+    }
+    .inBoxTextBox h1 {
+        padding: 10px;
+    }
+    .movieInBox {
+        height: 60%;
+        min-height: 500px;
+    }
+}
