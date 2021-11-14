@@ -4,6 +4,8 @@ import { Link, Route, Switch } from 'react-router-dom';
 import './Basic.scss';
 import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 
+
+
 function Basic() {
 
 
@@ -89,10 +91,9 @@ function Basic() {
                 </Navbar>
             </header>
 
-
             <section className='basicBox'>
+                <svg id="visual" viewBox="0 0 100 600" width="100%" height="100%" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" version="1.1"><defs><filter id="blur1" x="-10%" y="-10%" width="120%" height="120%"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend><feGaussianBlur stdDeviation="161" result="effect1_foregroundBlur"></feGaussianBlur></filter></defs><rect width="900" height="600" fill="#291c6e"></rect><g filter="url(#blur1)"><circle cx="716" cy="470" fill="#563fc7" r="357"></circle><circle cx="88" cy="84" fill="#291c6e" r="357"></circle><circle cx="441" cy="95" fill="#563fc7" r="357"></circle><circle cx="409" cy="477" fill="#563fc7" r="357"></circle><circle cx="835" cy="254" fill="#291c6e" r="357"></circle><circle cx="228" cy="377" fill="#563fc7" r="357"></circle></g></svg>
                 <div className='duelBasicBox'>
-                    <img src='./imgs/masterCat_01.png' className='masterCatImg'></img>
                 </div>
             </section>
             <section className='duelCombo'>
