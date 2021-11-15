@@ -42,7 +42,8 @@ body {
 }
 
 .duel .imgBox .sunsetBox,
-.duel .imgBox .afternoonBox {
+.duel .imgBox .afternoonBox,
+.duel .imgBox .nightBox {
 	width: 400px;
 	height: 100px;
 	background-color: #32344b;
@@ -50,7 +51,8 @@ body {
 	position: relative;
 }
 .duel .imgBox .sunsetBox::before,
-.duel .imgBox .afternoonBox::before {
+.duel .imgBox .afternoonBox::before,
+.duel .imgBox .nightBox::before {
 	content: "";
 	width: 100%;
 	height: 50%;
@@ -59,7 +61,8 @@ body {
 	bottom: 0;
 }
 .duel .imgBox .sunsetBox h1,
-.duel .imgBox .afternoonBox h1 {
+.duel .imgBox .afternoonBox h1,
+.duel .imgBox .nightBox h1 {
 	font-size: 2em;
 	color: white;
 	text-shadow: 3px 3px 10px black;
@@ -71,7 +74,8 @@ body {
 	margin-bottom: 0 !important;
 }
 .duel .imgBox .sunsetBox span,
-.duel .imgBox .afternoonBox span {
+.duel .imgBox .afternoonBox span,
+.duel .imgBox .nightBox span {
 	font-size: 1.2em;
 	color: white;
 	position: absolute;
@@ -84,21 +88,24 @@ body {
 }
 
 .duel .imgBox .sunsetBox img,
-.duel .imgBox .afternoonBox img {
+.duel .imgBox .afternoonBox img,
+.duel .imgBox .nightBox img {
 	width: auto;
 	height: 100%;
 	position: absolute;
 	left: 2%;
 }
 .duel .imgBox .sunsetFooter,
-.duel .imgBox .afternoonFooter {
+.duel .imgBox .afternoonFooter,
+.duel .imgBox .nightFooter {
 	width: 400px;
 	height: 50px;
 	background-color: black;
 	position: relative;
 }
 .duel .imgBox .sunsetFooter h2,
-.duel .imgBox .afternoonFooter h2 {
+.duel .imgBox .afternoonFooter h2,
+.duel .imgBox .nightFooter h2 {
 	color: white;
 	font-size: 1em;
 	position: absolute;
@@ -108,7 +115,8 @@ body {
 }
 
 .sunsetImg,
-.afternoonImg {
+.afternoonImg,
+.nightImg {
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -118,7 +126,8 @@ body {
 	object-fit: cover;
 }
 .sunsetFooter svg,
-.afternoonFooter svg {
+.afternoonFooter svg,
+.nightFooter svg {
 	color: white;
 	cursor: pointer;
 }
@@ -133,9 +142,11 @@ body {
 @media (max-width: 425px) {
 	.duel .imgBox .sunsetFooter,
 	.duel .imgBox .afternoonFooter,
+	.duel .imgBox .nightFooter,
     .duel .imgBox img,
     .duel .imgBox .sunsetBox,
-	.duel .imgBox .afternoonBox {
+	.duel .imgBox .afternoonBox,
+	.duel .imgBox .nightBox {
 		width: 300px;
 	}
 
@@ -145,18 +156,21 @@ body {
 	}
 
 	.duel .imgBox .sunsetBox img,
-	.duel .imgBox .afternoonBox img {
+	.duel .imgBox .afternoonBox img,
+	.duel .imgBox .nightBox img {
 		width: 80px;
 		height: auto;
 	}
 
 	.duel .imgBox .sunsetBox h1,
-	.duel .imgBox .afternoonBox h1 {
+	.duel .imgBox .afternoonBox h1,
+	.duel .imgBox .nightBox h1 {
 		font-size: 1.5em;
 		padding: 5px;
 	}
 	.duel .imgBox .sunsetBox span,
-	.duel .imgBox .afternoonBox span {
+	.duel .imgBox .afternoonBox span,
+	.duel .imgBox .nightBox span {
 		font-size: 1em;
 		margin-left: 10px;
 	}
