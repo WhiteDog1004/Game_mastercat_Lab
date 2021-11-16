@@ -92,8 +92,46 @@ function Basic() {
             </header>
 
             <section className='basicBox'>
-                <svg id="visual" viewBox="0 0 100 600" width="100%" height="100%" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" version="1.1"><defs><filter id="blur1" x="-10%" y="-10%" width="120%" height="120%"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend><feGaussianBlur stdDeviation="161" result="effect1_foregroundBlur"></feGaussianBlur></filter></defs><rect width="900" height="600" fill="#291c6e"></rect><g filter="url(#blur1)"><circle cx="716" cy="470" fill="#563fc7" r="357"></circle><circle cx="88" cy="84" fill="#291c6e" r="357"></circle><circle cx="441" cy="95" fill="#563fc7" r="357"></circle><circle cx="409" cy="477" fill="#563fc7" r="357"></circle><circle cx="835" cy="254" fill="#291c6e" r="357"></circle><circle cx="228" cy="377" fill="#563fc7" r="357"></circle></g></svg>
+                <img src='./imgs/lobby.png'></img>
                 <div className='duelBasicBox'>
+                    <div>
+                        <h1>결투의 기본</h1>
+                        <ul className="duelBasicUl">
+                            <li>
+                                <ul>
+                                    <h3>1. 캐릭터들의 기술들을 이해한다</h3>
+                                    <li>
+                                        <span>어느 게임을 하나 pvp에서 제일 중요한 것이 캐릭터들의 기술들을 알아야 하는 것이다<br />
+                                              아직 캐릭터들의 기술들을 잘 모른다 싶으면 캐릭터 하나씩 체험하거나 많이 맞아보자
+                                        </span>
+                                        <p>모르나요? 모르면 맞아야죠! - Nin</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <h3>2. 상대의 패턴을 파악하며 천천히 진입하고, 압박한다</h3>
+                                    <li>
+                                        <span>pvp에서는 상대가 이 다음 어떤 플레이를 할지 생각하며 플레이를 해야한다<br />
+                                              그것을 파악하고 압박하여 주도권을 가져가는 것이 핵심.
+                                        </span>
+                                        <p>지는게 상관없다면 무지성 플레이하세요 - 늑대개</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <h3>3. 상대의 실수를 유도한다</h3>
+                                    <li>
+                                        <span>마스터캣의 장점인 스킬, 이동속도를 이용한 플레이로 상대의 공격을 유도한다.<br />
+                                              상대가 눈치채고 공격을 하지 않는다면, 2번처럼 천천히 압박하여 공격할 수 밖에 없게 만들자
+                                        </span>
+                                        <p>현명한 사람은 기회를 찾지 않고, 기회를 창조한다 - 프란시스  베이컨</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <section className='duelCombo'>

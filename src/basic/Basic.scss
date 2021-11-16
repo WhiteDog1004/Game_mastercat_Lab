@@ -34,11 +34,10 @@ section {
 }
 
 .duelBasicBox {
-    margin-top: 25px;
     width: 80%;
     height: 80%;
     min-height: 680px;
-    background-color: var(--sub-bg-color) !important;
+    background-color: black !important;
     z-index: 99;
     position: absolute;
     top: 50%;
@@ -47,7 +46,11 @@ section {
     border-radius: 20px;
     -webkit-box-shadow: 0px 10px 13px -7px #000000, -8px -26px 7px 17px rgba(0,0,0,0); 
     box-shadow: 0px 10px 13px -7px #000000, -8px -26px 7px 17px rgba(0,0,0,0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
+    opacity: .93;
 }
 @media (max-width: 991px) { 
 }
@@ -65,4 +68,39 @@ section {
 .svgBox {
     width: 100%;
     height: 600px;
+}
+
+.duelBasicBox div{
+    color: white;
+    text-align: left;
+}
+.duelBasicBox div h1 {
+    margin: 10px;
+    color: rgba(255, 255, 255, .7);
+    text-align: center !important;
+}
+.duelBasicBox div h3 {
+    font-weight: 400;
+    color: rgb(224, 129, 216);
+    padding: 10px 0;
+}
+.duelBasicBox div span {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+.duelBasicBox div p {
+    color: rgba(255, 255, 255, 0.5);
+}
+.duelBasicBox div ul {
+    padding-left: 0 !important;
+}
+.duelBasicBox div > ul > li {
+    padding: 10px;
+    border-top: 1px solid rgba(0, 0, 0, .3);
+}
+
+.duelBasicUl > li:hover {
+    background-color: rgba(255, 255, 255, .1);
+    transition: .5s;
+    cursor: pointer;
 }
