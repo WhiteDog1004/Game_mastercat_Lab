@@ -13,7 +13,6 @@ function Basic() {
         let basicLi = document.querySelectorAll('.duelBasicUl > li');
         let backBtn = document.querySelectorAll('.back');
 
-        console.log(containerUl);
         basicLi.forEach((el, num) => {
             el.addEventListener('click', () => {
                 containerUl.classList.remove(...containerUl.classList);
@@ -165,8 +164,11 @@ function Basic() {
                         </div>
                         <div className='oneBtn'>
                             <div className='back'>뒤로가기</div>
-                            <ul>
-                                <li>하이</li>
+                            <ul className='btnUl'>
+                                <h1>1. 캐릭터들의 기술들을 이해한다</h1>
+                                <li>
+                                    <span>상대 기술도 모르면 어떻게 피하고 어떻게 때릴지 제대로된 게임 플레이를 할 수 가없다.</span>
+                                </li>
                             </ul>
                         </div>
                         <div className='twoBtn'>

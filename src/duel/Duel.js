@@ -22,6 +22,13 @@ function Duel() {
 
     let [timer, setTimer] = useState('다음 아레나까지 ' + (tt - hour) + '시간 ' + (59 - minute) + '분');
 
+
+    // 2이면 심야
+    // 1이면 석양
+    // 0이면 낮
+
+    console.log((day % 3));
+
     if (month === 11 || month === 12) {
         if (day % 3 === 0) {
             // 현재 심야
@@ -31,7 +38,7 @@ function Duel() {
             } else {
                 dayCheck = 2;
             }
-        } else if (-1 === (day % 3) - 1) {
+        } else if (2 === day % 3) {
             // 현재 석양
             // 전날 낮
             if (hour < 10) {
@@ -179,7 +186,7 @@ function DayCheck() {
             } else {
                 dayCheck = 2;
             }
-        } else if (-1 === (day % 3) - 1) {
+        } else if (2 === day % 3) {
             // 현재 석양
             // 전날 낮
             if (hour < 10) {
