@@ -26,7 +26,7 @@ function Basic() {
             })
         })
         backBtn.forEach((el, num) => {
-            el.addEventListener('click', ()=> {
+            el.addEventListener('click', () => {
                 if (num === 0) {
                     containerUl.classList.remove('oneLi');
                 } else if (num === 1) {
@@ -140,10 +140,10 @@ function Basic() {
                                 </li>
                                 <li>
                                     <ul>
-                                        <h3>2. 상대의 패턴을 파악하여 천천히 진입하면서 압박한다</h3>
+                                        <h3>2. 상대의 패턴을 파악하여 압박한다</h3>
                                         <li>
                                             <span>pvp에서는 상대가 이 다음 어떤 플레이를 할지 생각하며 플레이를 해야한다<br />
-                                                그것을 파악하고 압박하여 주도권을 가져가는 것이 핵심.
+                                                그것을 파악하고 천천히 진입하고, 압박하여 주도권을 가져가는 것이 핵심.
                                             </span>
                                             <p>지는게 상관없다면 무지성 플레이하세요 - 늑대개</p>
                                         </li>
@@ -167,20 +167,32 @@ function Basic() {
                             <ul className='btnUl'>
                                 <h1>1. 캐릭터들의 기술들을 이해한다</h1>
                                 <li>
-                                    <span>상대 기술도 모르면 어떻게 피하고 어떻게 때릴지 제대로된 게임 플레이를 할 수 가없다.</span>
+                                    <span>상대 기술도 모르면 어떻게 피하고 어떻게 때릴거임?<br />
+                                        내가 아직 잘 모르겠다 싶은 캐릭터들을 훈련장 가서 직접 체험한 다음 기술들을 파악하도록 하자
+                                    </span>
                                 </li>
                             </ul>
                         </div>
                         <div className='twoBtn'>
                             <div className='back'>뒤로가기</div>
-                            <ul>
-                                <li>하이</li>
+                            <ul className='btnUl'>
+                                <h1>2. 상대의 패턴을 파악하여 압박한다</h1>
+                                <li>
+                                    <span>상대 기술도 모르면 어떻게 피하고 어떻게 때릴거임?<br />
+                                        내가 아직 잘 모르겠다 싶은 캐릭터들을 훈련장 가서 직접 체험한 다음 기술들을 파악하도록 하자
+                                    </span>
+                                </li>
                             </ul>
                         </div>
                         <div className='thrBtn'>
                             <div className='back'>뒤로가기</div>
-                            <ul>
-                                <li>하이</li>
+                            <ul className='btnUl'>
+                                <h1>3. 상대의 실수를 유도한다</h1>
+                                <li>
+                                    <span>상대 기술도 모르면 어떻게 피하고 어떻게 때릴거임?<br />
+                                        내가 아직 잘 모르겠다 싶은 캐릭터들을 훈련장 가서 직접 체험한 다음 기술들을 파악하도록 하자
+                                    </span>
+                                </li>
                             </ul>
                         </div>
                     </div>

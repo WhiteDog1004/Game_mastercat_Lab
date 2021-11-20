@@ -27,8 +27,6 @@ function Duel() {
     // 1이면 석양
     // 0이면 낮
 
-    console.log((day % 3));
-
     if (month === 11 || month === 12) {
         if (day % 3 === 0) {
             // 현재 심야

@@ -55,7 +55,7 @@ section {
     position: absolute;
     padding: 10px;
     right: 20px;
-    top: 12px;
+    bottom: 12px;
     border: 1px solid white;
     border-radius: 10px;
     cursor: pointer;
@@ -80,14 +80,64 @@ section {
 .btnUl {
     text-align: center;
 }
+.btnUl:nth-of-type(2) h1 {
+    font-size: 2rem !important;
+}
 .btnUl li span {
-    font-size: 24px;
+    font-size: 18px !important;
 }
 
 @media (max-width: 991px) { 
+    .duelBasicBox > div > div h1 {
+        font-size: 22px;
+    }
+    .duelBasicBox > div > div h3 {
+        font-size: 20px;
+    }
+    .duelBasicBox > div > div li span,
+    .duelBasicBox > div > div li p {
+        font-size: 14px !important;
+    }
 }
-
 @media (max-width: 767px) {
+    .duelBasicBox > div > div h1 {
+        font-size: 18px;
+    }
+    .duelBasicBox > div > div h3 {
+        font-size: 16px;
+    }
+    .duelBasicBox > div > div li span,
+    .duelBasicBox > div > div li p {
+        font-size: 12px !important;
+    }
+}
+@media (max-width: 625px) {
+    .duelBasicBox > div > div h1 {
+        font-size: 18px;
+    }
+    .duelBasicBox > div > div h3 {
+        font-size: 16px;
+    }
+    .duelBasicBox > div > div li span,
+    .duelBasicBox > div > div li p {
+        font-size: 12px !important;
+    }
+}
+@media (max-width: 510px) {
+    .duelBasicBox > div > div h1 {
+        font-size: 16px;
+    }
+    .duelBasicBox > div > div h3 {
+        font-size: 14px;
+    }
+    .duelBasicBox > div > div li span,
+    .duelBasicBox > div > div li p {
+        font-size: 10px !important;
+        padding: 0;
+    }
+    .duelBasicBox div > ul > li {
+        padding: 0 !important;
+    }
 }
 
 .duelComboBox {
