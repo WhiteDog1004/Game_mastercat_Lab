@@ -27,8 +27,16 @@ function Duel() {
     // 1이면 석양
     // 0이면 낮
 
-    if (month === 11 || month === 12) {
+    if (month === 1) {
         if (day % 3 === 0) {
+            // 현재 낮
+            // 전날 심야
+            if (hour < 10) {
+                dayCheck = 2;
+            } else {
+                dayCheck = 0;
+            }
+        } else if (2 === day % 3) {
             // 현재 심야
             // 전날 석양
             if (hour < 10) {
@@ -36,21 +44,13 @@ function Duel() {
             } else {
                 dayCheck = 2;
             }
-        } else if (2 === day % 3) {
+        } else {
             // 현재 석양
             // 전날 낮
             if (hour < 10) {
                 dayCheck = 0;
             } else {
                 dayCheck = 1;
-            }
-        } else {
-            // 현재 낮
-            // 전날 심야
-            if (hour < 10) {
-                dayCheck = 2;
-            } else {
-                dayCheck = 0;
             }
         }
     }
@@ -175,8 +175,16 @@ function DayCheck() {
     let day = today.getDate();
     let dayCheck = 0;
 
-    if (month === 11 || month === 12) {
+    if (month === 1) {
         if (day % 3 === 0) {
+            // 현재 낮
+            // 전날 심야
+            if (hour < 10) {
+                dayCheck = 2;
+            } else {
+                dayCheck = 0;
+            }
+        } else if (2 === day % 3) {
             // 현재 심야
             // 전날 석양
             if (hour < 10) {
@@ -184,21 +192,13 @@ function DayCheck() {
             } else {
                 dayCheck = 2;
             }
-        } else if (2 === day % 3) {
+        } else {
             // 현재 석양
             // 전날 낮
             if (hour < 10) {
                 dayCheck = 0;
             } else {
                 dayCheck = 1;
-            }
-        } else {
-            // 현재 낮
-            // 전날 심야
-            if (hour < 10) {
-                dayCheck = 2;
-            } else {
-                dayCheck = 0;
             }
         }
     }

@@ -206,42 +206,12 @@ function Ability() {
                                 placement='bottom'
                                 overlay={
                                     <Tooltip id='tooltip-bottom'>
-                                        <strong>격노</strong><br />
-                                        중첩쌓고 압박 플레이를 하면
-                                        상황을 주도할 수 있어 좋음
-                                    </Tooltip>
-                                }
-                            >
-                                <img src='./imgs/masterCat/cat_02.png' />
-                            </OverlayTrigger>
-                            <OverlayTrigger
-                                key='bottom'
-                                placement='bottom'
-                                overlay={
-                                    <Tooltip id='tooltip-bottom'>
                                         <strong>신속한 발걸음</strong><br />
                                         궁 유지시간 늘고, 이속 증가? 이걸 왜 안씀?
                                     </Tooltip>
                                 }
                             >
                                 <img src='./imgs/masterCat/cat_03.png' />
-                            </OverlayTrigger>
-                        </div>
-                    </div>
-                    <div className='tier_02'>
-                        <h2>2티어</h2>
-                        <div>
-                            <OverlayTrigger
-                                key='bottom'
-                                placement='bottom'
-                                overlay={
-                                    <Tooltip id='tooltip-bottom'>
-                                        <strong>정신집중</strong><br />
-                                        중첩 쌓는 게 어렵지 않아서 <br />정신집중이 훨 좋은듯
-                                    </Tooltip>
-                                }
-                            >
-                                <img src='./imgs/masterCat/cat_01.png' />
                             </OverlayTrigger>
                             <OverlayTrigger
                                 key='bottom'
@@ -254,6 +224,36 @@ function Ability() {
                                 }
                             >
                                 <img src='./imgs/masterCat/cat_05.png' />
+                            </OverlayTrigger>
+                        </div>
+                    </div>
+                    <div className='tier_02'>
+                        <h2>2티어</h2>
+                        <div>
+                            <OverlayTrigger
+                                key='bottom'
+                                placement='bottom'
+                                overlay={
+                                    <Tooltip id='tooltip-bottom'>
+                                        <strong>정신집중</strong><br />
+                                        중첩쌓고 압박 플레이를 하면
+                                        상황을 주도할 수 있어 좋음
+                                    </Tooltip>
+                                }
+                            >
+                                <img src='./imgs/masterCat/cat_02.png' />
+                            </OverlayTrigger>
+                            <OverlayTrigger
+                                key='bottom'
+                                placement='bottom'
+                                overlay={
+                                    <Tooltip id='tooltip-bottom'>
+                                        <strong>격노</strong><br />
+                                        중첩 쌓는 게 어렵지 않아서 <br />정신집중이 훨 좋은듯
+                                    </Tooltip>
+                                }
+                            >
+                                <img src='./imgs/masterCat/cat_01.png' />
                             </OverlayTrigger>
                         </div>
                     </div>
